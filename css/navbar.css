@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Default';
+    src: url(fonts/Gill-sans-mt-regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* For Navigation Bar */
+
+nav {
+    background: #144753;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height:11.5vh;
+}
+
+.nav-back{
+    width: 100vw;
+    height:11.3vh;
+    background: aqua;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-head {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-head div .nav-title{
+    display: flex;
+    padding: 3.6vh 3vw;
+    font-size: 1.2em;
+    margin:0;
+}
+
+nav .menu-btn {
+    display: none;
+}
+
+nav #toggable {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav #toggable div{
+    padding:2vh 2vw;
+}
+
+/* ICON */
+.Group_1 {
+    position: relative;
+    height: 2vw;
+    width: 2vw;
+    display: inline-block;
+}
+
+.CE {
+    position: absolute;
+    font-family: 'Gill-Sans';
+    color: white;
+    font-size: 1.2vw;
+    top: 0.2vw;
+    left: -1.5vw;
+}
+
+.Rectangle_1 {
+    position: absolute;
+    border: 1px solid white;
+    height: 2.5vw;
+    width: 2.5vw;
+    left: -2vw;
+    top: -0.8vw;
+    transform: rotate(45deg)
+}
+
+.Rectangle_2 {
+    position: absolute;
+    border: 1px solid white;
+    height: 2.5vw;
+    width: 2.5vw;
+    left: -2vw;
+    top: -0.4vw;
+    transform: rotate(45deg)
+}
+
+.Rectangle_3 {
+    position: absolute;
+    border: 1px solid white;
+    height: 2.5vw;
+    width: 2.5vw;
+    left: -2vw;
+    top: 0vw;
+    transform: rotate(45deg)
+}
+
+
+@media screen and (min-width: 600px) {
+    nav #toggable div:hover {
+        background: #072C35;
+    }
+    nav .nav-head div .nav-title:hover{
+        background: #072C35;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        height: auto;
+    }
+    .nav-back{
+        height:11.3vh;
+    }
+    nav #toggable div:active {
+        background: #072C35;
+    }
+    nav .nav-head div .menu-btn:active {
+        background: #072C35;
+    }
+    nav .nav-head div .nav-title:active {
+        background: #072C35;
+       
+    }
+    nav .nav-head div .nav-title{
+        font-size: 3.5vh;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav .nav-head {
+        width: 100%;
+    }
+    nav .nav-head div .menu-btn {
+        position: absolute;
+        right: 0px;
+        top:0px;
+        display: block;
+        padding: 3.8vh 5vw;
+    }
+    nav #toggable {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        overflow: hidden;
+        align-items: flex-start;
+        height: 0;
+        transition: height 0.4s linear;
+    }
+    nav #toggable div{
+        width: 100vh;
+    }
+    nav #toggable div a{
+        display: block;
+    }
+
+    .Group_1 {
+        position: relative;
+        height: 5vw;
+        width: 12vw;
+        display: inline-block;
+    }
+    
+    .CE {
+        position: absolute;
+        font-family: 'Gill-Sans';
+        color: white;
+        font-size: 5vw;
+        top: -0.8vw;
+        left: -0vw;
+    }
+    
+    .Rectangle_1 {
+        position: absolute;
+        border: 1px solid white;
+        height: 9vw;
+        width: 9vw;
+        left: -0.8vw;
+        top: -1vw;
+        transform: rotate(45deg)
+    }
+    
+    .Rectangle_2 {
+        position: absolute;
+        border: 1px solid white;
+        height: 9vw;
+        width: 9vw;
+        left: -0.8vw;
+        top: -3vw;
+        transform: rotate(45deg)
+    }
+    
+    .Rectangle_3 {
+        position: absolute;
+        border: 1px solid white;
+        height: 9vw;
+        width: 9vw;
+        left: -0.8vw;
+        top: -5vw;
+        transform: rotate(45deg)
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Code Empire Home Page</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/rest_body.css">
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav>
+        <div class="nav-head">
+
+            <div>
+                <a href="#" class="nav-title">
+                    <div style="display:flex; justify-content:center;align-items:center;">
+                        <div class="Group_1">
+                            <div class="Rectangle_1"></div>
+                            <div class="Rectangle_2"></div>
+                            <div class="Rectangle_3"></div>
+                            <div class="CE">CE</div>
+                        </div>
+                    </div>THE CODE EMPIRE</a>
+            </div>
+            <div>
+                <a class="menu-btn" onclick="menuToggle()">&#9776;</a>
+            </div>
+
+        </div>
+        <div id="toggable">
+            <div><a href="#">DASHBOARD</a></div>
+            <div><a href="#">FORUM</a></div>
+            <div><a href="#">COMPONENTS SHOWCASE</a></div>
+            <div><a href="#">COURSE CURRICULUM</a></div>
+        </div>
+    </nav>
+    <div class="nav-back">
+    </div>
+
+    <div class="hero">
+        <img src="images/The-Code-Empire-Logo.png" width="40%" alt="">
+        <div style="display:inline-block;text-align:center;">
+            <div>
+                <h3 style="font-size:3em;color:#144753;">Wecome to </h3>
+            </div>
+            <div>
+                <h2 style="font-size:5em;color:#144753;">THE CODE EMPIRE</h2>
+            </div>
+        </div>
+    </div>
+    <div class="info" style="display:flex;flex-direction:column;">
+        <div style="color:#fff; font-size:3em;text-align:center;">
+            Learn Programming from Scratch and create wonderful Applications for Web and Mobile with <br>
+            <b style="text-shadow: 0 0 5px #ffffff;">THE CODE EMPIRE</b> course for FREE!
+        </div>
+        <button class="btn2">
+            View introductory Docs
+        </button>
+    </div>
+
+    <div class="info2" style="display:flex;flex-direction:column;">
+            <div style="color:#144753; font-size:3em;text-align:center;">
+               Create 15 Apps with your own resume and personal blog. By the end you will be completely Job Ready
+               as a FullStack developer. <br><br>Showcase a wonderful E-Commerce Application as a Final Project. 
+               This Zero to Hero is beginner friendly and does not require any programming experience!
+            </div>
+        </div>
+    
+
+    <div class="info">
+        <div class="info-img">
+            <img src="images/creativeBrain.png" alt="Image">
+        </div>
+        <div class="info-text">
+            Mix Creativity with Technical Knowlede to master the art of coding masterpieces with our
+            <b style="text-shadow: 0 0 5px #ffffff;">HTML & CSS</b> Coding Program!
+        </div>
+    </div>
+
+    <div class="info2">
+        <div class="info2-text">
+            Learn the popular principles of Programming with <b style="text-shadow: 0 0 2px #072C35">JavaScript</b> and make
+            pages dynamic and interactive by combining <b style="text-shadow: 0 0 2px #072C35">Firebase.</b>
+        </div>
+        <div class="info2-img">
+            <img style="width:20vw;height:auto;"src="images/js.png" alt="">
+            <img style="width:20vw;height:auto;" src="images/firebase.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="info">
+        <div class="info-img">
+            <img src="images/react.jpg" class="react3" alt="">
+        </div>
+        <div class="info-text">
+            Create an Engineering Reaction inside your app with the most popular JavaScript Front-End library to-date ,
+            <b style="text-shadow: 0 0 5px #ffffff;">React.JS</b>!
+        </div>
+    </div>
+
+    <div class="info2">
+        <div class="info2-text">
+            Use React principles to build Cross Platform Applications for Mobile and Desktop using
+            <b style="text-shadow: 0 0 2px #072C35">React Native</b> & <b style="text-shadow: 0 0 2px #072C35">Electron.JS</b>
+        </div>
+        <div class="info2-img">
+            <img src="images/mobile-desktop.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="info">
+        <div class="info-img">
+            <img src="images/server.png" alt="">
+        </div>
+        <div class="info-text">
+            Finally use <b style="text-shadow: 0 0 2px #fff">Express</b> along with <b style="text-shadow: 0 0 2px #fff">Next.JS </b>            to Engineer apps on the Server-Side and create a Real World E-Commerce App as a Final Project using <b style="text-shadow: 0 0 2px #fff">MongoDB</b>            Database!
+        </div>
+    </div>
+    <div class="info2" style="display:flex;flex-direction:column;height:40vh;">
+            <button class="btn" style="font-size:4em;">
+                Let's Get Coding!
+            </button>
+    </div>
+    <footer>
+        <div style="text-align:center;font-size:2em;">
+            <p>Footer</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- navbar -->
+    <script>
+        function menuToggle() {
+            var list = document.getElementById('toggable');
+            if (list.className === 'visi') {
+                list.className = '';
+                list.style.height = 0;
+            } else {
+                list.className = 'visi';
+                list.style.height = '32vh';
+            }
+        }
+     
+
+    </script>
+
+</body>
+
+</html>
