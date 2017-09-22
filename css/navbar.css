@@ -31,6 +31,8 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
+    font-family: 'Glegoo';
+
 }
 
 nav .nav-head {
@@ -110,6 +112,9 @@ nav #toggable div{
 @media screen and (min-width: 600px) {
     nav #toggable div:hover {
         background: #072C35;
+        transition: 0.3s;
+        border-radius: 4%;
+        border: none;
     }
     nav .nav-head div .nav-title:hover{
         background: #072C35;
@@ -212,3 +217,4 @@ nav #toggable div{
         transform: rotate(45deg)
     }
 }
+
